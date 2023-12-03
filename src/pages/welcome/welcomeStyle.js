@@ -46,8 +46,7 @@ export const DataWrapper = styled.div`
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
-    width: 503px;
-    height: 86px;
+    /* height: 86px; */
   }
   button {
     color: #fff;

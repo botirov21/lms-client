@@ -6,7 +6,7 @@ import appBarButtonImg4 from '../../assets/appBar-button4.png';
 import appBarButtonImg5 from '../../assets/appBar-button5.png';
 import appBarButtonImg6 from '../../assets/appBar-button6.png';
 import appBarButtonImg7 from '../../assets/appBar-button7.png';
-import appBarImage from '../../assets/appBar-image.png'
+import SideBarImage from '../../assets/appBar-image.png'
 import logo2 from '../../assets/Logo_vgroup2.png'
 import { SideBarWrapper, SideLink } from './sideBarStyle';
 
@@ -34,7 +34,7 @@ const SideBar = () => {
          {state.showContainer && (
              <>
                <img style={{paddingBottom:30}} src={logo2} alt="" />
-               <img src={appBarImage} alt="" />
+               <img src={SideBarImage} alt="" />
              </>
           )}
         </div>  
@@ -45,7 +45,9 @@ const SideBar = () => {
         <SideLink to='/myPrograms'>
         <button className='sideBar-button'> <img src={appBarButtonImg3} alt="" /></button>
         </SideLink>
+        <SideLink to='/myProfile'>
         <button className='sideBar-button'> <img src={appBarButtonImg4} alt="" /></button>
+        </SideLink>
         <button className='sideBar-button'> <img src={appBarButtonImg5} alt="" /></button>
         <button className='sideBar-button'> <img src={appBarButtonImg6} alt="" /></button>
         <button className='sideBar-button'> <img src={appBarButtonImg7} alt="" /></button>
@@ -55,15 +57,18 @@ const SideBar = () => {
       <div className='sideBar-data'>
         <div className='pageNames'>
           <p></p>
+          <SideLink to="/" >
           <p className='pageName'>Welcome</p>
+          </SideLink>
+          <SideLink to='/myPrograms'>
           <p className='pageName' >My programs</p>
+          </SideLink>
           <p className='pageName'> My profile</p>
           <p className='pageName'>My notes</p>
           <p className='pageName'>Virtual classroom</p>
           <p className='pageName' >My rewards</p>
         </div>
       </div>
-
     )}
   </SideBarWrapper>
   )

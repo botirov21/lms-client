@@ -6,6 +6,7 @@ text-decoration:none;
 `
 export const HomeWrapper = styled.div`
   display: flex;
+  justify-content:center;
   height: 100vh;
   background: var(
     --bg-dark-1,
@@ -23,7 +24,6 @@ export const SideBarWrapper = styled.div`
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   z-index: 2;
-  position: absolute;
   height: 100vh;
 `;
 export const VidioWrapper = styled.div`

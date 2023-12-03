@@ -146,5 +146,4 @@ const Home = () => {
     </HomeWrapper>
   )
 }
-
 export default Home

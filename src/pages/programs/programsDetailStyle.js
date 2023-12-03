@@ -27,35 +27,72 @@ export const SideBarWrapper = styled.div`
   height: 100vh;
 `;
 export const VidioWrapper = styled.div`
-  padding-top: 40px;
   display: flex;
   flex: 6;
   justify-content: center;
-  align-items: center;
+  align-items:center;
+  border: solid black 1px;
+  padding-top:50px;
   .vidio-wrap {
     display: flex;
+    width: 100%;
     justify-content: center;
     gap: 20px;
+    padding-right: 50px;
   }
   .vidioWrap-left {
     display: flex;
+    align-items: end;
     flex: 2;
-    gap: 35px;
     flex-direction: column;
-    border-right: solid 5px #00F5FC;
-    height:700px;
+    border-right: solid 5px #00f5fc;
   }
   .vidioWrap-right {
     display: flex;
     flex: 1;
-    gap: 35px;
-    flex-direction: column;
   }
   .vidio {
     padding: 20px 30px 30px 0px;
-    width: 801px;
-    height: 390px;
-    border-top: solid 1px #C0C0C0;
-    border-bottom: solid 1px #C0C0C0;
+    width: 600px;
+    height: 300px;
+    border-top: solid 1px #c0c0c0;
+    border-bottom: solid 1px #c0c0c0;
+  }
+  .lessonName {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .courseName {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .Transcription {
+    background: var(
+      --bg-dark-secondary,
+      linear-gradient(
+        180deg,
+        rgba(51, 50, 59, 0.5) 0%,
+        rgba(118, 118, 118, 0) 100%
+      )
+    );
+    width: 600px;
+    padding: 15px;
+  }
+  .Transcription-text {
+    color: var(--color-typo-dark-theme, #c0c0c0);
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 `;
